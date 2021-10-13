@@ -21,11 +21,9 @@ public class ExchangeRate extends DefaultHandler {
 		for (int i = 0; i < attributes.getLength(); i++) {
 			if (attributes.getLength() < 4) {
 				footer = false;
-				continue;
 			}
 			if (footer) {
 				footer(attributes, i);
-				continue;
 			} else {
 				setExExchangersMap(attributes, i);
 			}
@@ -40,7 +38,7 @@ public class ExchangeRate extends DefaultHandler {
 			this.ex.setBank("PrivatBank");
 		}
 		else if (atr.getQName(value).equals("BaseCurrencyLit")) {
-			this.ex.setÑurrency(atr.getValue(value));
+			this.ex.setÃ‘urrency(atr.getValue(value));
 		}
 	}
 
