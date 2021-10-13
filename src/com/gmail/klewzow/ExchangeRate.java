@@ -38,7 +38,7 @@ public class ExchangeRate extends DefaultHandler {
 			this.ex.setBank("PrivatBank");
 		}
 		else if (atr.getQName(value).equals("BaseCurrencyLit")) {
-			this.ex.setÑurrency(atr.getValue(value));
+			this.ex.setСurrency(atr.getValue(value));
 		}
 	}
 
